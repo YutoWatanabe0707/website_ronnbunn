@@ -1,0 +1,304 @@
+body {
+    /* 読みやすいゴシック体系のフォントを指定 */
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    /* 行の間隔を1.6倍にして、文章を読みやすくする */
+    line-height: 1.6;
+    /* 文字の色を真っ黒より少し薄い、目に優しい黒にする */
+    color: #333;
+    /* 画面の端にある余計な隙間をなくす */
+    margin: 0;
+    padding: 0;
+    /* ページ全体の背景を非常に薄いグレーにして、白のカードを際立たせる */
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #1a237e;
+    color: white;
+    /* 上下に40px、左右に20pxの空間を作って看板を大きく見せる */
+    padding: 40px 20px;
+    /* 文字を中央に寄せる */
+    text-align: center;
+}
+
+h1 {
+    /* 文字の横の余計な隙間をなくす */
+    margin: 0;
+    /* タイトルの大きさを標準の1.8倍にする */
+    font-size: 1.8em;
+}
+
+/* =========================================
+   紹介・説明エリア（白いカードのような箱）
+   ========================================= */
+.intro-section {
+    /* 横に広がりすぎて読みづらくならないよう、最大幅を800pxに制限 */
+    max-width: 800px;
+    /* 上下に40pxの隙間を作り、左右は自動で真ん中に寄せる */
+    margin: 40px auto;
+    /* 箱の内側に30pxの余白を作り、文字が壁に付かないようにする */
+    padding: 30px;
+    /* 箱の背景を真っ白にする */
+    background-color: #ffffff;
+    /* 角を15px丸くして、今風の柔らかいデザインにする */
+    border-radius: 15px;
+    /* 下側にほんのりと影をつけて、立体感を出す */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.intro-section h2 {
+    /* 箱の中の見出しをヘッダーと同じ濃い青色にする */
+    color: #1a237e;
+    /* 下側に2pxの線を引いて強調する */
+    border-bottom: 2px solid #1a237e;
+    /* 線の長さを文字の長さ分だけにする設定 */
+    display: inline-block;
+    /* 線と下の文章との間に15pxの隙間を作る */
+    margin-bottom: 15px;
+}
+
+.intro-section p {
+    /* 文章の大きさを少しだけ大きく（1.05倍）する */
+    font-size: 1.05em;
+    /* 文と文の間に15pxの隙間を作る */
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   ボタンのレイアウトとデザイン
+   ========================================= */
+.button-container {
+    /* ボタンを画面の中央に配置する */
+    text-align: center;
+    /* 前後のコンテンツ（文章など）との間に40pxの隙間を作る */
+    margin: 40px 0;
+}
+.next-button {
+    display: inline-block;
+    padding: 18px 60px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.next-button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+/* 画像を背景にしたボタンのデザイン */
+.image-bg-button {
+    display: inline-block;
+    width: 300px;         /* ボタンの横幅 */
+    height: 80px;         /* ボタンの高さ */
+    line-height: 80px;    /* 文字を上下中央に配置 */
+    text-align: center;   /* 文字を左右中央に配置 */
+    
+    /* 背景画像の設定 */
+    background-image: url('mondai/inposter.png'); 
+    background-size: cover;    /* 画像を隙間なく敷き詰める */
+    background-position: center; /* 画像の中央を表示 */
+    
+    color: white;              /* 文字の色 */
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;     /* 下線を消す */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* 画像の上でも文字を読みやすくする影 */
+    border-radius: 10px;       /* 角を少し丸くする */
+    overflow: hidden;          /* はみ出た画像をカット */
+    transition: 0.3s;          /* 動きを滑らかに */
+}
+/* マウスを乗せた時の演出 */
+.image-bg-button:hover {
+    transform: scale(1.05);    /* 少し大きくする */
+    filter: brightness(1.1);   /* 少し明るくして「押せる感」を出す */
+}
+
+/* 左寄せにしたい時に使う名前（クラス） */
+.align-left {
+    text-align: left !important;
+    padding-left: 5%; /* 画面の端すぎないように少し隙間を作る */
+}
+
+.image-box {
+    width: 100%;
+    max-width: 800px; /* お好みの最大幅 */
+    margin: 20px auto;
+    border: 1px solid #eee; /* 枠線（お好みで） */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  /* 説明文のスタイル */
+  .image-box figcaption {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #333;
+    line-height: 1.6;
+    text-align: left; /* 中央寄せ */
+  }
+  .image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  /* 選択肢を包むコンテナ */
+/* 選択肢を包むコンテナの修正 */
+.quiz-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+    align-items: stretch; /* ★ここをstretchにすることで、同じ行の箱の高さが揃います */
+}
+/* 画像の設定 */
+.choice-img {
+    width: 100%;       /* 箱の横幅いっぱいに広げる */
+    height: auto;      /* 比率は維持 */
+    max-height: 180px; /* 大きくなりすぎないよう制限 */
+    object-fit: contain; /* 画像が切れないように収める */
+    margin-bottom: 10px; /* 下の文字との隙間 */
+    border-radius: 5px;  /* 画像の角も少し丸く */
+}
+
+/* 選択肢の箱全体のデザインを修正 */
+.choice-box {
+    background-color: #ffffff;
+    border: 2px solid #ced4da;
+    border-radius: 12px; /* この丸みからはみ出さないようにする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+    /* ★重要：これを入れると、中身が親の角丸を突き破らなくなります */
+    overflow: hidden; 
+    
+    transition: all 0.3s ease;
+}
+
+/* 選択肢の文字部分を画像と縦に並べる設定 */
+.choice-box summary {
+    padding: 15px 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    font-size: 0.9em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;           /* ★これが重要！中身が空いていても下まで伸びます */
+    justify-content: center; /* ★文字が少なくても常に中央に来るようにする */
+}
+
+/* テキスト部分の設定 */
+.choice-text {
+    flex-grow: 1;          /* 文字部分が伸びて高さを揃える */
+    display: flex;
+    align-items: center;   /* 文字を上下中央に */
+}
+  /* マウスを乗せた時 */
+  .choice-box summary:hover {
+    background: #c7c5cc;
+  }
+  /* 【重要】開いている時のスタイル */
+  .choice-box[open] {
+    border-color: #007bff;
+    box-shadow: 0 4px 15px rgba(0,123,255,0.2);
+  }
+ /* もし開いた時にsummaryの背景色が変わる設定にしている場合 */
+.choice-box[open] summary {
+    background: #007bff;
+    color: white;
+    /* 角丸の指定は不要になります（親のoverflow:hiddenが効くため） */
+}
+/* 評価メッセージのエリア（重なり防止） */
+.evaluation-content {
+    padding: 20px;
+    font-size: 0.9em;
+    line-height: 1.5;
+    background: #ffffff;
+    border-top: 1px solid #eee;
+    /* 他の要素と重ならないように位置を固定しない */
+    position: relative; 
+    display: block;
+}
+
+  /* 問題文を出すところ */
+  .quiz-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  }
+  /* 問題文のエリア */
+  .question-box {
+    background-color: #e3f2fd; /* 薄い青色（ここを変えると色が変わります） */
+    color: #0d47a1;            /* 濃い青色の文字 */
+    padding: 20px;
+    border-radius: 12px 12px 0 0; /* 上側だけ丸くする */
+    border-left: 8px solid #2196f3; /* 左側にアクセントの線 */
+    margin-bottom: 0;           /* 画像とくっつけるために0にする */
+  }
+  .question-box h2 {
+    margin: 0;
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+  /* 画像のエリア */
+  .main-image {
+    width: 100%;
+    display: block;
+    border: 2px solid #e3f2fd; /* 問題文と同じ色の枠線 */
+    border-radius: 0 0 12px 12px; /* 下側だけ丸くする */
+    box-sizing: border-box;
+  }
+
+.simple-heading {
+    border-left: 5px solid #007bff;
+    padding-left: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #c27b12;
+    margin: 20px 0 10px 0;
+    cursor: pointer;    /* マウスを乗せると指マークになる */
+    list-style: none;   /* 左側の三角矢印を消す */
+}
+/* iPhoneなどのブラウザでも三角矢印を消す設定 */
+.simple-heading::-webkit-details-marker {
+    display: none;
+}
+/* 解説文の中身のデザイン */
+.explanation-text {
+    padding: 20px;
+    margin: 10px 0 20px 15px;
+    /* 背景色：非常に薄い青（目に優しい色） */
+    background-color: #f0f7ff; 
+    /* 枠線：少し濃い青で「囲い」を作る */
+    border: 1px solid #b3d7ff;
+    /* 角を少し丸くする */
+    border-radius: 8px;
+    /* 文字の色と間隔 */
+    color: #003366;
+    line-height: 1.8;
+}
+/* おまけ：マウスを乗せた時に少し明るくして「押せる感」を出す */
+.simple-heading:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #f1f1f1;
+    margin-top: 60px;
+}
+footer p {
+    margin: 5px 0;
+}

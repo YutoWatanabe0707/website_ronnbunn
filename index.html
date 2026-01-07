@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        window.onload = function() {
+            const lastPage = localStorage.getItem('sv_progress');
+            if (lastPage) {
+                document.getElementById('resume-area').style.display = 'block';
+                document.getElementById('resume-button').href = lastPage;
+            }
+        };
+
+        function saveProgress(pageName) {
+            localStorage.setItem('sv_progress', pageName);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Shadowverse:World Beyoundにおける<br>予測し対処する流れを学ぶwebサイト</h1>
+    </header>
+
+    <section class="intro-section">
+        <h2>このサイトについて</h2>
+        <p>Shadowverse: World Beyondでは、相手の動きを「予測」し、最適な「対処」を行う力が勝敗を分けます。</p>
+        <p>対戦中に遭遇する様々な状況をクイズ形式で再現。次に来る強力なアクションを予測するトレーニングができます。</p>
+        <p><strong>さあ、次のステージのプレイングを身につけましょう。</strong></p>
+    </section>
+
+   <div class="button-container">
+        <a href="page1.html" class="next-button" onclick="saveProgress('page1.html')">最初からスタート</a>
+        
+        <div id="resume-area" style="margin-top: 20px; display: none;">
+            <p style="color: #666; font-size: 0.9em;">前回の続きがあります：</p>
+            <a id="resume-button" href="#" class="next-button" style="background-color: #2196f3;">続きから再開</a>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
+    <p>© Cygames, Inc.</p>
+    <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
+    <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
+    </footer>
+
+</body>
+</html>
