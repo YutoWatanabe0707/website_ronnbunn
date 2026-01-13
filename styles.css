@@ -149,15 +149,14 @@ h1 {
     border-radius: 4px;
   }
   /* 選択肢を包むコンテナ */
-/* 選択肢を包むコンテナの修正 */
+/* 囲みの中の配置を整える */
 .quiz-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
-    margin: 20px auto;
-    max-width: 1200px;
-    align-items: stretch; /* ★ここをstretchにすることで、同じ行の箱の高さが揃います */
+    margin: 20px 0;
 }
+
 /* 画像の設定 */
 .choice-img {
     width: 100%;       /* 箱の横幅いっぱいに広げる */
@@ -232,7 +231,15 @@ h1 {
     position: relative; 
     display: block;
 }
-
+/* Q1やQ2を一つのまとまりにする囲み */
+.quiz-group {
+    background-color: #ffffff; /* 箱の中を白にする */
+    border: 2px solid #1a237e; /* シャドバらしい濃い青の枠線 */
+    border-radius: 15px;      /* 角を丸くする */
+    padding: 25px;            /* 内側にゆとりを持たせる */
+    margin-bottom: 50px;      /* Q1とQ2の間の距離 */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* 影をつけて立体的に */
+}
   /* 問題文を出すところ */
   .quiz-page {
     max-width: 1000px;
@@ -301,4 +308,78 @@ footer {
 }
 footer p {
     margin: 5px 0;
+}
+/* 隙間をあけるための調整 */
+.spacer {
+    height: 30px;
+}
+/* 危険度ラベルの基本スタイル */
+.danger-level {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    background-color: #eee;
+}
+
+/* --- Q1 危険度スタイル --- */
+.danger-level {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.danger-level[data-level="4"] {
+    background-color: #ff4d4d; color: white; 
+}
+.danger-level[data-level="3"] {
+    background-color: #ffa500; color: white; 
+} /* 高い：赤 */
+.danger-level[data-level="2"] {
+    background-color: #fff3e0; color: #ef6c00;  
+} /* 警戒：オレンジ */
+.danger-level[data-level="1"] {
+    background-color: #e8f5e9; color: #2e7d32; 
+} /* 低い：緑 */
+
+.danger-level span {
+    letter-spacing: 2px;
+}
+
+/* --- Q2 有効度スタイル --- */
+.effective-level {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.effective-level[data-level="4"] {
+     background: #e3f2fd; color: #0d47a1; border: 2px solid #0d47a1; 
+} /* 最高：濃い青 */
+.effective-level[data-level="3"] {
+     background: #e1f5fe; color: #0288d1; border: 1px solid #0288d1; 
+} /* 有効：青 */
+.effective-level[data-level="2"] {
+     background: #f3e5f5; color: #7b1fa2; border: 1px solid #7b1fa2;
+} /* 普通：紫 */
+.effective-level[data-level="1"] { 
+     background: #f5f5f5; color: #616161; border: 1px solid #bdbdbd; 
+} /* 微妙：グレー */
+
+/* ガイドページ専用のテキスト装飾 */
+.guide-content h3 {
+    margin-top: 30px;
+    color: #1a237e;
+    font-size: 1.2em;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 5px;
+}
+
+.guide-content p {
+    margin-bottom: 15px;
+    line-height: 1.8;
 }
