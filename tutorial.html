@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>操作ガイド | Shadowverse予測学習</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>まずは使い方を体験しよう！<br>（練習問題）</h1>
+    </header>
+    <div class="intro-section" style="border: 2px solid #2196f3;">
+        <p style="color: #2196f3; font-weight: bold; margin-bottom: 5px;">📍 STEP 1：状況を把握する</p>
+        <p>まずはこの画像と状況説明文を見て、今の状況を理解しよう。</p>
+        <p> 画像の下に書かれている状況説明文には、画像では分からない情報が書かれているよ。</p>
+    </div>
+
+    <figure class="image-box">
+        <img src="mondai/N-miruthio.png" alt="チュートリアル画像">
+        <figcaption> 相手のクラスはナイトメアで、デッキのコンセプトはミルティオナイトメア。<br>
+                     自分の連携は5、進化回数は0回で、手札の「蒼い空を征く騎空士・グラン&ジータ」と「天使長の後継・サンダルフォン」の解放奥義は6である。<br>
+                     相手の手札に「スケルトン」1枚と「腐臭のゾンビ」1枚があることが分かっている。
+        </figcaption>
+    </figure>
+
+    <div class="quiz-group">
+        <div class="tutorial-guide">
+            <p style="color: #2196f3; font-weight: bold; margin-bottom: 5px;">📍 STEP 2：相手の行動を予測しよう</p>
+            <p>4つの選択肢の中から次の相手の動きとして最も危険度が高いものを見つけよう。危険度は4段階で💀マークが多いほど危険なものとして扱うよ。</p>
+            <p>選択肢には、それぞれ危険度と危険度に対する理由があってクリックすると見ることができるよ。</p>
+        </div>
+
+        <div class="quiz-page">
+            <div class="question-box">
+                <h2>Q. 次のターンに予測できる相手の行動で危険なものは？</h2>
+            </div>
+        </div>
+
+        <div class="quiz-container">
+            <details class="choice-box" name="q1_tutorial">
+                <summary>
+                    <img src="cards/miruthio.png" class="choice-img">
+                    <span class="choice-text">充つ《恋人と節制》・ミルティオ&ルーゼン</span>
+                </summary>
+                <div class="evaluation-content">
+                    <div class="danger-level" data-level="4">危険度：<span>💀💀💀💀</span></div>
+                    <p>このフォロワーが超進化すると、クレスト：（自分のフォロワーのファンファーレやエンハンスは働かないが、自分がフォロワーをプレイしたとき、それは進化する）を持つ。
+                       更にこのフォロワーが進化したとき、場の他のフォロワーからランダム6枚を破壊するため、場を展開しても簡単にフォロワーを倒されてしまう。
+                    </p>
+                </div>
+            </details>
+
+            <details class="choice-box" name="q1_tutorial">
+                <summary>
+                    <img src="cards/mukann.png" class="choice-img">
+                    <span class="choice-text">瞑地の天宮・ムカン</span>
+                </summary>
+                <div class="evaluation-content">
+                    <div class="danger-level" data-level="2">危険度：<span>💀💀</span></div>
+                    <p>このフォロワーは、ファンファーレのネクロマンス8で進化し、進化したとき「ゴースト」が出る。
+                       それは必殺を持つので、「ゴースト」が必殺を持ち、2体盤面が取られる。 
+                    </p>
+                </div>
+            </details>
+
+            <details class="choice-box" name="q1_tutorial">
+                <summary>
+                    <img src="cards/fusyu-zonbi.png" class="choice-img">
+                    <span class="choice-text">腐臭のゾンビ</span>
+                </summary>
+                <div class="evaluation-content">
+                    <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
+                    <p>ラストワードでラストワードを失った「腐臭のゾンビ」が出てくるが、盤面は強くなく、相手の動きとしては弱い。
+                    </p>
+                </div>
+            </details>
+
+            <details class="choice-box" name="q1_tutorial">
+                <summary>
+                    <img src="cards/yuna.png" class="choice-img">
+                    <span class="choice-text">怪奇の探索者・ユナ</span>
+                </summary>
+                <div class="evaluation-content">
+                    <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
+                    <p>ラストワードで「ゴースト」と「バット」の2枚が手札に加わるうえに、スタッツが高く、守護も持っている。
+                       更に、「充つ《恋人と節制》・ミルティオ&ルーゼン」のクレストが付与された後、どちらも進化し3点疾走と3ドレインとなり、ゲーム後半が不利になる。
+                    </p>
+                </div>
+            </details>
+        </div>
+
+       <div class="tutorial-guide">
+            <p style="color: #2196f3; font-weight: bold; margin-bottom: 5px;">📍 STEP 3：予測に対する理由を知ろう</p>
+            <p>問題の下にある予想の説明を開くと、予測に対する理由が見れるよ。</p>
+            <p>予測の理由では、その選択肢が相手の行動として可能性が高いと判断した理由やアドバイスなどが書いてあるよ。</p>
+        </div>
+
+        <details class="explanation-box">
+            <summary class="simple-heading">予想の説明（ここをクリック！）</summary>
+            <div class="explanation-text">
+                <p>ミルティオナイトメアは「充つ《恋人と節制》・ミルティオ&ルーゼン」のクレストによる自動進化を活かしたデッキで、手札の疾走フォロワーで打点を作り攻めてくる。</p>
+                <p>この状況では相手は後攻6ターン目でそのターンから超進化が使える為、「充つ《恋人と節制》・ミルティオ&ルーゼン」がプレイされる可能性が高い。</p>
+                <p>「充つ《恋人と節制》・ミルティオ&ルーゼン」はファンファーレでリアニメイト2と4をし、進化したときに場の他のフォロワーからランダム6枚を破壊するため、リソースを温存して対応していくことが有効である。</p>
+            </div>
+        </details>
+    </div>
+
+    <div class="quiz-group">
+        <div class="tutorial-guide">
+            <p style="color: #2196f3; font-weight: bold; margin-bottom: 5px;">📍 STEP 4：有効な対処法を見つけよう</p>
+            <p>予測の理由を踏まえた上で、4つの選択肢の中から有効度が高い対処の選択肢を見つけよう。有効度は4段階で★マークが多いほど有効なものとして扱うよ。</p>
+            <p>選択肢には、それぞれ有効度と有効度に対する理由があってクリックすると見ることができるよ。</p>
+        </div>
+
+    <div class="quiz-page">
+        <div class="question-box">
+            <h2>Q. 上記の予測の理由を踏まえた上で対処として良いと思うものを選びなさい</h2>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <details class="choice-box" name="q2_tutorial">
+            <summary>
+                <img src="cards/unnkei.png" class="choice-img">
+                <span class="choice-text">「麗金花・ウンケイ」を出して、ファンファーレで消滅させる。</span>
+            </summary>
+           <div class="evaluation-content">
+                <div class="effective-level" data-level="4">有効度：★★★★</div>
+                <p>「充つ《恋人と節制》・ミルティオ&ルーゼン」はファンファーレでリアニメイト2と4をするため、相手の「怪奇の探索者・ユナ」を消滅させることでリアニメイトの対象を弱くさせることができる。
+                    また、進化したときの効果で破壊されてしまうが、進化権や手札を無駄にせずに温存できる。
+                </p>
+            </div>
+        </details>
+
+        <details class="choice-box" name="q2_tutorial">
+            <summary>
+                <img src="cards/girudaria.png" class="choice-img">
+                <span class="choice-text">「静寂のアナテマ・ギルダリア」を出して進化し、進化したときに出た突進のついた「スティールナイト」で相手のフォロワー倒して、盤面に2体残す。</span>
+            </summary>
+            <div class="evaluation-content">
+                <div class="effective-level" data-level="2">有効度：★★</div>
+                <p> 「静寂のアナテマ・ギルダリア」と「スティールナイト」がダメージを受けずに盤面に残って良い選択のように思えるが、「充つ《恋人と節制》・ミルティオ&ルーゼン」の進化したときの効果で簡単に破壊されてしまう。
+                    「静寂のアナテマ・ギルダリア」は連携20を超えるとファンファーレで超進化するため、いざという時まで取っておきたいカードである。
+                    基本的に進化して使うカードである為、進化権も使ってしまい、この場面で使うのは得策ではない。
+                </p>
+            </div>
+        </details>
+
+        <details class="choice-box" name="q2_tutorial">
+            <summary>
+                <img src="cards/guran&zi-ta.png" class="choice-img">
+                <span class="choice-text">「蒼い空を征く騎空士・グラン&ジータ」のモード1（相手の場のフォロワーからランダム1枚に5ダメージ）を選んで出す。</span>
+            </summary>
+            <div class="evaluation-content">
+                <div class="effective-level" data-level="3">有効度：★★★</div>
+                <p>「蒼い空を征く騎空士・グラン&ジータ」のファンファーレで進化権を使わずにフォロワーを破壊することができる。
+                    手札も1枚しか使わず、リソースを温存できている。
+                </p>
+            </div>
+        </details>
+
+        <details class="choice-box" name="q2_tutorial">
+            <summary>
+                <img src="cards/girune.png" class="choice-img">
+                <span class="choice-text">「干絶の顕現・ギルネリーゼ」を出して、ファンファーレと進化時で相手のフォロワーを選択して倒す。残った3PPで「颶風の天業・グリームニル」を出す。</span>
+            </summary>
+            <div class="evaluation-content">
+                <div class="effective-level" data-level="1">有効度：★</div>
+                <p>このプレイでは、盤面を作り相手のフォロワーも取れた上に「颶風の天業・グリームニル」のクレストも付与でき,この選択肢が1番良いように思えるが実際は違う。
+                   「干絶の顕現・ギルネリーゼ」はドレインを持っており、この対面では自動進化した疾走で削られたリーダーの体力を回復するために使いたい。
+                   また、手札2枚を使って作った盤面も「充つ《恋人と節制》・ミルティオ&ルーゼン」の進化したときの効果で簡単に破壊されてしまう。
+                </p>
+            </div>
+        </details>
+    </div>
+
+    <div class="tutorial-guide">
+            <p style="color: #2196f3; font-weight: bold; margin-bottom: 5px;">📍 STEP 5：対処に対する理由を知ろう</p>
+            <p>問題の下にある対処の説明を開くと、対処に対する理由が見れるよ。</p>
+            <p>対処の理由では、有効な選択肢がなぜ最善なのかといった説明などが書いてあるよ。</p>
+        </div>
+    
+    <details class="explanation-box">
+        <summary class="simple-heading">対処の説明（クリック！）</summary>
+        <div class="explanation-text">
+            <P>「充つ《恋人と節制》・ミルティオ&ルーゼン」はファンファーレのリアニメイトで墓場から2体場に出してくるため、ラストワードで手札を増やす「怪奇の探索者・ユナ」を消滅させることは、相手のリソースとリアニメイトの対象を減らせて有利になる。</P>
+            <p>また、進化したときに、場の他のフォロワーからランダム6枚を破壊するため、無駄な盤面展開はせず、返しに強い盤面を作ることが大切である。</p>
+            <p>「干絶の顕現・ギルネリーゼ」は回復で、「静寂のアナテマ・ギルダリア」はその後の強い盤面展開で使いたいので温存して、このターンは最小限のリソースで凌ぐのがベストです。</p>
+        </div>
+    </details>
+    </div>
+
+<div class="tutorial-finish-box">
+    <div class="finish-icon">COMPLETE!</div>
+    <h2>チュートリアル完了！</h2>
+    <p>お疲れ様でした！これでこのサイトの使い方はバッチリです。<br>
+    実際の対戦データに基づいた本番の<strong>「第1問」</strong>に挑戦してみましょう。</p>
+</div>
+
+<div class="button-container">
+    <a href="page1.html" class="next-button" onclick="saveProgress('page1.html')">1問目に進む</a>
+</div>
+
+<script>
+    function saveProgress(pageName) {
+        localStorage.setItem('sv_progress', pageName);
+    }
+</script>
+
+<footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
+    <p>© Cygames, Inc.</p>
+    <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
+    <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
+</footer>

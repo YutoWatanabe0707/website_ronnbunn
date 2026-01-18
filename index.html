@@ -3,22 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>予測し対処する流れを学ぶwebサイト</title>
     <link rel="stylesheet" href="styles.css">
-
-    <script>
-        window.onload = function() {
-            const lastPage = localStorage.getItem('sv_progress');
-            if (lastPage) {
-                document.getElementById('resume-area').style.display = 'block';
-                document.getElementById('resume-button').href = lastPage;
-            }
-        };
-
-        function saveProgress(pageName) {
-            localStorage.setItem('sv_progress', pageName);
-        }
-    </script>
 </head>
 
 <body>
@@ -28,25 +14,44 @@
 
     <section class="intro-section">
         <h2>このサイトについて</h2>
-        <p>Shadowverse: World Beyondでは、相手の動きを「予測」し、最適な「対処」を行う力が勝敗を分けます。</p>
-        <p>対戦中に遭遇する様々な状況をクイズ形式で再現。次に来る強力なアクションを予測するトレーニングができます。</p>
-        <p><strong>さあ、次のステージのプレイングを身につけましょう。</strong></p>
+        <p>Shadowverse: World Beyondでは、相手の動きを<strong>「予測」</strong>し、最適な<strong>「対処」</strong>を行う力が勝敗を分けます。</p>
+        <p>対戦中に遭遇する様々な状況を<strong>実戦形式で再現</strong>。次に来る強力なアクションを読み解き、最善の選択を導き出すトレーニングができます。</p>
+        <p><strong>初めての方は、練習問題で「予測と対処」の流れを体験してみましょう。</strong></p>
     </section>
 
-   <div class="button-container">
-        <a href="page1.html" class="next-button" onclick="saveProgress('page1.html')">最初からスタート</a>
-        
-        <div id="resume-area" style="margin-top: 20px; display: none;">
-            <p style="color: #666; font-size: 0.9em;">前回の続きがあります：</p>
-            <a id="resume-button" href="#" class="next-button" style="background-color: #2196f3;">続きから再開</a>
-        </div>
+    <div class="button-container">
+    <a href="tutorial.html" class="next-button secondary">最初からスタート</a>
+    
+    <div id="resume-area" style="display: none; margin-top: 20px;">
+        <p style="color: #666; font-size: 0.9em; margin-bottom: 10px;">前回の続きがあります：</p>
+        <a id="resume-button" href="#" class="next-button">続きから再開</a>
     </div>
+</div>
+
+    <script>
+        // 1. 保存する関数
+        function saveProgress(pageName) {
+            localStorage.setItem('sv_progress', pageName);
+        }
+
+        // 2. ページを開いた時に保存データがあるか確認する
+        window.onload = function() {
+            const lastPage = localStorage.getItem('sv_progress');
+            const resumeArea = document.getElementById('resume-area');
+            const resumeButton = document.getElementById('resume-button');
+
+            // データがあり、かつ要素が見つかれば表示する
+            if (lastPage && resumeArea && resumeButton) {
+                resumeArea.style.display = 'block';
+                resumeButton.href = lastPage;
+            }
+        };
+    </script>
 
     <footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
-    <p>© Cygames, Inc.</p>
-    <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
-    <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
+        <p>© Cygames, Inc.</p>
+        <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
+        <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
     </footer>
-
 </body>
 </html>
