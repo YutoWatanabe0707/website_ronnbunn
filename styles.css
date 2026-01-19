@@ -139,12 +139,11 @@ h1 {
     padding: 20px;
     border-radius: 8px;
 }
-/* 1. 4つを横に並べる設定 */
 .quiz-container {
     display: flex;
-    flex-wrap: nowrap;      /* 折り返さない（1行に収める） */
-    justify-content: space-between; /* 均等に並べる */
-    gap: 10px;              /* 箱同士の隙間 */
+    flex-wrap: wrap; /* nowrap から wrap に変更：入り切らない時は下に回る */
+    justify-content: center; /* 中央寄せにするときれいに見えます */
+    gap: 15px;
     width: 100%;
     margin-top: 20px;
 }
@@ -463,8 +462,4 @@ footer p {
     font-size: 1.1em;
     border-bottom: 1px solid #dee2e6;
     padding-bottom: 5px;
-}
-html {
-    -webkit-text-size-adjust: 100%; /* iPhone/Safariでの勝手な拡大を禁止 */
-    text-size-adjust: 100%;         /* 標準的なブラウザでの勝手な拡大を禁止 */
 }
