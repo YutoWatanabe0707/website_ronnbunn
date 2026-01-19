@@ -161,13 +161,19 @@ h1 {
     min-height: auto !important; 
 }
 
+/*.choice-img {
+    width: 100%;      
+    height: auto;      
+    max-height: 180px; 
+    object-fit: contain; 
+    margin-bottom: 10px; 
+    border-radius: 5px;  
+}*/
 .choice-img {
-    width: 100%;       /* 箱の横幅いっぱいに広げる */
-    height: auto;      /* 比率は維持 */
-    max-height: 180px; /* 大きくなりすぎないよう制限 */
-    object-fit: contain; /* 画像が切れないように収める */
-    margin-bottom: 10px; /* 下の文字との隙間 */
-    border-radius: 5px;  /* 画像の角も少し丸く */
+    width: 100%;
+    height: 120px !important; /* 高さを強制的に固定する（数値は調整してください） */
+    object-fit: cover;       /* これを入れると、縦長画像でも枠に合わせて綺麗に切り抜かれます */
+    margin-bottom: 10px;
 }
 
 /* 2. カード全体のパディング（内側の余白）を最小化 */
