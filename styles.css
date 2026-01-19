@@ -464,3 +464,7 @@ footer p {
     border-bottom: 1px solid #dee2e6;
     padding-bottom: 5px;
 }
+html {
+    -webkit-text-size-adjust: 100%; /* iPhone/Safariでの勝手な拡大を禁止 */
+    text-size-adjust: 100%;         /* 標準的なブラウザでの勝手な拡大を禁止 */
+}
