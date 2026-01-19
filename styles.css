@@ -141,9 +141,9 @@ h1 {
 }
 .quiz-container {
     display: flex;
-    flex-wrap: wrap; /* nowrap から wrap に変更：入り切らない時は下に回る */
-    justify-content: center; /* 中央寄せにするときれいに見えます */
-    gap: 15px;
+    flex-wrap: nowrap;      /* ←これが原因です：1行に絶対収める設定 */
+    justify-content: space-between;
+    gap: 10px;
     width: 100%;
     margin-top: 20px;
 }
