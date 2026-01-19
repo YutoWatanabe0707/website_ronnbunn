@@ -1,173 +1,177 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>2問目</title>
-   <link rel="stylesheet" href="styles.css">
-   <script>
-    // ページが開かれた瞬間に「第1問」を保存する
-    localStorage.setItem('sv_progress', 'page2.html');
-   </script>
+    <meta charset="UTF-8">
+    <title>操作ガイド | Shadowverse予測学習</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
-      <h1>Shadowverse:World Beyoundにおける<br>予測し対処する流れを学ぶwebサイト</h1>
-   </header>
+    <header>
+        <h1>まずは使い方を体験しよう！<br>（練習問題）</h1>
+    </header>
 
-<figure class="image-box">
-  <img src="mondai/n-hakai.png" alt="画像の内容を示す短い説明">
-  <figcaption>
-   相手のクラスはネメシスで、デッキのコンセプトは破壊ネメシス。<br>
-   自分の連携は13で進化回数は2回で、手札の「十天衆の頭目・シエテ」と「天使長の後継・サンダルフォン」の解放奥義は10である。
-  </figcaption>
-</figure>
+    <figure class="image-box">
+        <img src="mondai/n-hakai.png" alt="画像の内容を示す短い説明">
+        <figcaption> 相手のクラスはネメシスで、デッキのコンセプトは破壊ネメシス。<br>
+                     自分の連携は13で進化回数は2回で、手札の「十天衆の頭目・シエテ」と「天使長の後継・サンダルフォン」の解放奥義は10である。
+        </figcaption>
+    </figure>
 
-<div class="quiz-group">
-<div class="quiz-page">
-  <div class="question-box">
-    <h2>Q. 次のターンに予測できる相手の行動で危険なものは？</h2>
-  </div>
-</div>
+    <div class="quiz-group">
 
-<div class="quiz-container">
-  <details class="choice-box" name="q1">
-    <summary>
-      <img src="cards/o-dhin.png" class="choice-img">
-      <span class="choice-text">運命の黄昏・オーディン</span>
-    </summary>
-    <div class="evaluation-content">
-      <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
-      <br>自分の体力が13点と少ないため盤面を取られながら進化してリーダに7点ダメージを受けてしまい、そのまま押し切られてしまう。
+        <div class="quiz-page">
+            <div class="question-box">
+                <h2>Q. 次のターンに予測できる相手の行動で危険なものは？</h2>
+            </div>
+        </div>
+
+        <div class="quiz-container">
+            <details class="choice-box" name="q1_tutorial">
+                <summary>
+                    <img src="cards/miruthio.png" class="choice-img">
+                    <span class="choice-text">運命の黄昏・オーディン</span>
+                </summary>
+                <div class="evaluation-content">
+                    <div class="danger-level" data-level="4">危険度：<span>💀💀💀</span></div>
+                    <p>自分の体力が13点と少ないため盤面を取られながら進化してリーダに7点ダメージを受けてしまい、そのまま押し切られてしまう。</p>
+                </div>
+            </details>
+
+            <details class="choice-box" name="q1_tutorial">
+                <summary>
+                    <img src="cards/mukann.png" class="choice-img">
+                    <span class="choice-text">全一の王・ベルゼバブ</span>
+                </summary>
+                <div class="evaluation-content">
+                    <div class="danger-level" data-level="2">危険度：<span>💀💀💀💀</span></div>
+                    <p>自分の受けるダメージが+1され、「新約黒の章」や「破壊の継承者・アクシア」などのダメージが大きくなってしまう。
+                       最高打点が増え、不利になる。
+                    </p>
+                </div>
+            </details>
+
+            <details class="choice-box" name="q1_tutorial">
+                <summary>
+                    <img src="cards/fusyu-zonbi.png" class="choice-img">
+                    <span class="choice-text">破壊の団結者</span>
+                </summary>
+                <div class="evaluation-content">
+                    <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
+                    <p>盤面を破壊されてしまうが、リーダーへのダメージは少なく相手の盤面も強くならないため危険性は低い。
+                    </p>
+                </div>
+            </details>
+
+            <details class="choice-box" name="q1_tutorial">
+                <summary>
+                    <img src="cards/yuna.png" class="choice-img">
+                    <span class="choice-text">怪奇の探索者・ユナ</span>
+                </summary>
+                <div class="evaluation-content">
+                    <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
+                    <p>ラストワードで「ゴースト」と「バット」の2枚が手札に加わるうえに、スタッツが高く、守護も持っている。
+                       更に、「充つ《恋人と節制》・ミルティオ&ルーゼン」のクレストが付与された後、どちらも進化し3点疾走と3ドレインとなり、ゲーム後半が不利になる。
+                    </p>
+                </div>
+            </details>
+        </div>
+
+        <details class="explanation-box">
+            <summary class="simple-heading">予想の説明（ここをクリック！）</summary>
+            <div class="explanation-text">
+                <p>ミルティオナイトメアは「充つ《恋人と節制》・ミルティオ&ルーゼン」のクレストによる自動進化を活かしたデッキで、手札の疾走フォロワーで打点を作り攻めてくる。</p>
+                <p>この状況では相手は後攻6ターン目でそのターンから超進化が使える為、「充つ《恋人と節制》・ミルティオ&ルーゼン」がプレイされる可能性が高い。</p>
+                <p>「充つ《恋人と節制》・ミルティオ&ルーゼン」はファンファーレでリアニメイト2と4をし、進化したときに場の他のフォロワーからランダム6枚を破壊するため、リソースを温存して対応していくことが有効である。</p>
+            </div>
+        </details>
     </div>
-  </details>
 
-  <details class="choice-box" name="q1">
-    <summary>
-      <img src="cards/beruzebabu.png" class="choice-img">
-      <span class="choice-text">全一の王・ベルゼバブ</span>
-    </summary>
-    <div class="evaluation-content">
-      <div class="danger-level" data-level="4">危険度：<span>💀💀💀💀</span></div>
-      <br>自分の受けるダメージが+1され、「新約黒の章」や「破壊の継承者・アクシア」などのダメージが大きくなってしまう。
-      最高打点が増え、不利になる。
+    <div class="quiz-group">>
+
+    <div class="quiz-page">
+        <div class="question-box">
+            <h2>Q. 上記の予測の理由を踏まえた上で対処として良いと思うものを選びなさい</h2>
+        </div>
     </div>
-  </details>
 
-  <details class="choice-box" name="q1">
-    <summary>
-      <img src="cards/dannketusya.png" class="choice-img">
-      <span class="choice-text">破壊の団結者</span>
-    </summary>
-    <div class="evaluation-content">
-      <div class="danger-level" data-level="2">危険度：<span>💀💀</span></div>
-      <br>盤面を破壊されてしまうが、リーダーへのダメージは少なく相手の盤面も強くならないため危険性は低い。
-     </div>
-  </details>
+    <div class="quiz-container">
+        <details class="choice-box" name="q2_tutorial">
+            <summary>
+                <img src="cards/unnkei.png" class="choice-img">
+                <span class="choice-text">「麗金花・ウンケイ」を出して、ファンファーレで消滅させる。</span>
+            </summary>
+           <div class="evaluation-content">
+                <div class="effective-level" data-level="4">有効度：★★★★</div>
+                <p>「充つ《恋人と節制》・ミルティオ&ルーゼン」はファンファーレでリアニメイト2と4をするため、相手の「怪奇の探索者・ユナ」を消滅させることでリアニメイトの対象を弱くさせることができる。
+                    また、進化したときの効果で破壊されてしまうが、進化権や手札を無駄にせずに温存できる。
+                </p>
+            </div>
+        </details>
 
-  <details class="choice-box" name="q1">
-    <summary>
-      <img src="cards/siruvia.png" class="choice-img">
-      <span class="choice-text">箱庭の断罪者・シルヴィア</span>
-    </summary>
-    <div class="evaluation-content">
-      <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
-      <br>回復か手札補充されるがリーダーへのダメージは無いため、次の相手のターンに負ける危険性は低い。
+        <details class="choice-box" name="q2_tutorial">
+            <summary>
+                <img src="cards/girudaria.png" class="choice-img">
+                <span class="choice-text">「静寂のアナテマ・ギルダリア」を出して進化し、進化したときに出た突進のついた「スティールナイト」で相手のフォロワー倒して、盤面に2体残す。</span>
+            </summary>
+            <div class="evaluation-content">
+                <div class="effective-level" data-level="2">有効度：★★</div>
+                <p> 「静寂のアナテマ・ギルダリア」と「スティールナイト」がダメージを受けずに盤面に残って良い選択のように思えるが、「充つ《恋人と節制》・ミルティオ&ルーゼン」の進化したときの効果で簡単に破壊されてしまう。
+                    「静寂のアナテマ・ギルダリア」は連携20を超えるとファンファーレで超進化するため、いざという時まで取っておきたいカードである。
+                    基本的に進化して使うカードである為、進化権も使ってしまい、この場面で使うのは得策ではない。
+                </p>
+            </div>
+        </details>
+
+        <details class="choice-box" name="q2_tutorial">
+            <summary>
+                <img src="cards/guran&zi-ta.png" class="choice-img">
+                <span class="choice-text">「蒼い空を征く騎空士・グラン&ジータ」のモード1（相手の場のフォロワーからランダム1枚に5ダメージ）を選んで出す。</span>
+            </summary>
+            <div class="evaluation-content">
+                <div class="effective-level" data-level="3">有効度：★★★</div>
+                <p>「蒼い空を征く騎空士・グラン&ジータ」のファンファーレで進化権を使わずにフォロワーを破壊することができる。
+                    手札も1枚しか使わず、リソースを温存できている。
+                </p>
+            </div>
+        </details>
+
+        <details class="choice-box" name="q2_tutorial">
+            <summary>
+                <img src="cards/girune.png" class="choice-img">
+                <span class="choice-text">「干絶の顕現・ギルネリーゼ」を出して、ファンファーレと進化時で相手のフォロワーを選択して倒す。残った3PPで「颶風の天業・グリームニル」を出す。</span>
+            </summary>
+            <div class="evaluation-content">
+                <div class="effective-level" data-level="1">有効度：★</div>
+                <p>このプレイでは、盤面を作り相手のフォロワーも取れた上に「颶風の天業・グリームニル」のクレストも付与でき,この選択肢が1番良いように思えるが実際は違う。
+                   「干絶の顕現・ギルネリーゼ」はドレインを持っており、この対面では自動進化した疾走で削られたリーダーの体力を回復するために使いたい。
+                   また、手札2枚を使って作った盤面も「充つ《恋人と節制》・ミルティオ&ルーゼン」の進化したときの効果で簡単に破壊されてしまう。
+                </p>
+            </div>
+        </details>
     </div>
-  </details>
-  </div>
-
-<details class="explanation-box">
-    <summary class="simple-heading">
-        予想の説明(クリックすると表示されるよ)
-    </summary>
-    <div class="explanation-text">
-        <p>この状況では相手は8ターン目だがエクストラPPがある為、9コストである「全一の王・ベルゼバブ」がプレイされる可能性が高い。</p>
-        <p>破壊ネメシスは「全一の王・ベルゼバブ」をプレイすると最大点数が増え不利になるため、プレイしにくい盤面を作ることが大切である。</p>
-    </div>
-</details>
-</div>
-
-<div class="quiz-group">
-<div class="quiz-page">
-  <div class="question-box">
-    <h2>Q. 上記の予測の理由を踏まえた上で対処として良いと思うものを選びなさい</h2>
-  </div>
-</div>
-
-<div class="quiz-container">
-  <details class="choice-box" name="q1">
-    <summary>
-      <img src="cards/zeta&bea.png" class="choice-img">
-      <span class="choice-text">「真紅と群青・ゼタ&ベアトリクス」のエンハンスで盤面を取りながら、相手リーダーに3点与える</span>
-    </summary>
-    <div class="evaluation-content">
-      <div class="effective-level" data-level="1">有効度：★</div>
-      <br>盤面にフォロワーが2体しか残らず超進化権を温存しながら「全一の王・ベルゼバブ」をプレイできてしまう。
-      更にリーダーに与えた3点も相手のターン開始時に「新約白の章」が破壊されて相手リーダーの体力が2回復するため、相手リーダーのダメージが実質減ってしまう。
-    </div>
-  </details>
-
-  <details class="choice-box" name="q1">
-    <summary>
-      <img src="cards/unnkei.png" class="choice-img">
-      <span class="choice-text">「麗金花・ウンケイ」で消滅させながら超進化をし、クレストを付与する。</span>
-    </summary>
-    <div class="evaluation-content">
-      <div class="effective-level" data-level="2">有効度：★★</div>
-      <br>プレイすることで輝く金貨がファンファーレで1枚と超進化時にクレスト付与で4回までターン終了時に手札に加わり、手札が潤沢になる。
-      しかし、盤面にフォロワーが2体しかいないため相手は超進化権を温存しながら「全一の王・ベルゼバブ」をプレイできてしまう。
-    </div>
-  </details>
-
-  <details class="choice-box" name="q1">
-    <summary>
-      <img src="cards/meiji.png" class="choice-img">
-      <span class="choice-text">「卓越のルミナスメイジ」を出して進化し、盤面に5体残しながら相手のフォロワーを倒す。</span>
-    </summary>
-    <div class="evaluation-content">
-      <div class="effective-level" data-level="4">有効度：★★★★</div>
-      <br>「全一の王・ベルゼバブ」は進化込みでフォロワーを3体までしか倒せないため、4体以上盤面に並べるとフォロワーを処理できず相手はプレイしにくくなる。
-      守護も3体並び「運命の黄昏・オーディン」の対策にもなる。
-    </div>
-  </details>
-
-  <details class="choice-box" name="q1">
-    <summary>
-      <img src="cards/girudaria.png" class="choice-img">
-      <span class="choice-text">「静寂のアナテマ・ギルダリア」を出して進化し、盤面に4体残して相手のフォロワーを倒す。</span>
-    </summary>
-    <div class="evaluation-content">
-      <div class="effective-level" data-level="3">有効度：★★★</div>
-      <br>「全一の王・ベルゼバブ」は進化込みでフォロワーを3体までしか倒せないため、4体以上盤面に並べるとフォロワーを処理できず相手はプレイしにくくなる。
-    </div>
-  </details>
-</div>
-
-<details class="explanation-box">
-    <summary class="simple-heading">
-        形対処の対処の説明(クリックすると表示されるよ)
-    </summary>
     
-    <div class="explanation-text">
-        <p>「全一の王・ベルゼバブ」はファンファーレで2体のフォロワーに能力を消しながら9ダメージを与え、進化してもフォロワーを最大3体までしか倒せない。</p>
-        <p>最低限進化権を使わせる為にも3体以上フォロワーを並べることが有効であり、4体以上並べると除去範囲から外れて場にフォロワーが残る。</p>
-        <p>そのため,盤面にフォロワーがいるほど相手はプレイしにくく、プレイされても盤面が残り「十天衆の頭目・シエテ」の奥義で進化しながら攻めることができる。</p>
+    <details class="explanation-box">
+        <summary class="simple-heading">対処の説明（クリック！）</summary>
+        <div class="explanation-text">
+            <P>「充つ《恋人と節制》・ミルティオ&ルーゼン」はファンファーレのリアニメイトで墓場から2体場に出してくるため、ラストワードで手札を増やす「怪奇の探索者・ユナ」を消滅させることは、相手のリソースとリアニメイトの対象を減らせて有利になる。</P>
+            <p>また、進化したときに、場の他のフォロワーからランダム6枚を破壊するため、無駄な盤面展開はせず、返しに強い盤面を作ることが大切である。</p>
+            <p>「干絶の顕現・ギルネリーゼ」は回復で、「静寂のアナテマ・ギルダリア」はその後の強い盤面展開で使いたいので温存して、このターンは最小限のリソースで凌ぐのがベストです。</p>
+        </div>
+    </details>
     </div>
-</details>
-</div>
 
 <div class="button-container">
-  <a href="page1.html" class="next-button">次の問題へ</a>
+    <a href="page1.html" class="next-button" onclick="saveProgress('page1.html')">1問目に進む</a>
 </div>
 
- <script src="scripts.js"></script>
+<script>
+    function saveProgress(pageName) {
+        localStorage.setItem('sv_progress', pageName);
+    }
+</script>
 
 <footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
     <p>© Cygames, Inc.</p>
     <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
     <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
 </footer>
-
-</body>
-</html>
