@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <title>10問目</title>
+   <link rel="stylesheet" href="styles.css">
+   <script>
+    // ページが開かれた瞬間に保存する
+    localStorage.setItem('sv_progress', 'page10.html');
+   </script>
+</head>
+<body>
+   <header>
+      <h1>Shadowverse:World Beyoundにおける<br>予測し対処する流れを学ぶwebサイト</h1>
+   </header>
+
+<figure class="image-box">
+  <img src="mondai/w-supell2.png" alt="対戦画面">
+  <figcaption>
+   相手のクラスはウィッチで、コンセプトはスペルウィッチ。<br>
+   自分の連携は14で進化回数は4回であり、手札の「蒼い空を征く騎空士・グラン&ジータ」の奥義は11ある。<br>
+   デッキの7コスト以上のフォロワーは「真王の刃・黄金の騎士」だけである。
+  </figcaption>
+</figure>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 次のターンに予測できる相手の行動で危険なものは？</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/o-dhin.png" class="choice-img">
+      <span class="choice-text">運命の黄昏・オーディン</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
+      <p>盤面を消滅させながら超進化してリーダに7点ダメージを受けてしまう。
+         スペルウィッチではピン刺しやそもそも入ってないことが多いので少し危険度が下がる。
+      </p>
+    </div>
+
+</details>
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/kuon.png" class="choice-img">
+      <span class="choice-text">五行の果て・クオン</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="4">危険度：<span>💀💀💀💀</span></div>
+      <p>エンハンスで場に出した他の式神を破壊して「式神・貴人」を出し、その攻撃力と体力はこのターン中破壊した式神の攻撃力と体力分上がる。
+         そのため、基本的には9/10のスタックとなり、その上オーラも持っている。
+         「五行の果て・クオン」の超進化時で「式神・貴人」は疾走を持ち、ぶっ飛び込みで10ダメージまで出る。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/ara.png" class="choice-img">
+      <span class="choice-text">明越花・アラ</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="2">危険度：<span>💀💀</span></div>
+      <p>ファンファーレで相手の場のフォロワー1体に10ダメージ与えてくる。
+         進化時に他のフォロワーがいれば、そのフォロワーを「壮麗なる隼」に変身させ疾走の4点ダメージを受ける。
+         負けはしないが詰められる。
+      </p>
+     </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/angure.png" class="choice-img">
+      <span class="choice-text">マナリアフレンズ・アン&グレア</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
+      <p>盤面展開するがリーダーへのダメージは無いため危険度は無い。</p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        予想の説明(クリックすると表示されるよ)
+    </summary>
+    <div class="explanation-text">
+        <p>この状況では相手は先攻10ターン目で超進化が1つ残っているので、「五行の果て・クオン」がプレイされる可能性が高い。</p>
+        <p>「鬼呼びの術」が一緒に使われ自壊すると、13点までダメージが伸びる。</p>
+        <p>そのため、リーダーの体力が10点以上で盤面にフォロワーを立てないか、守護を最低3面以上並べることが有効である。</p>
+    </div>
+    </details>
+</div>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 上記の予測の理由を踏まえた上で対処として良いと思うものを選びなさい</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/emiria.png" class="choice-img">
+      <span class="choice-text">「白銀の騎士団長・エミリア」を出し、「蒼い空を征く騎空士・グラン&ジータ」のモード1（相手の場のフォロワーからランダム1枚に5ダメージ）と、奥義でフォロワーを倒す。
+                                 その後、「静かなるメイド・ノーニャ」をプレイし守護を立てる。
+      </span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="1">有効度：★</div>
+          <P>守護が1体しかいないため負け筋が多く、有効でない。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/ruria.png" class="choice-img">
+      <span class="choice-text">「空の命運を握る少女・ルリア」のエンハンスで「真王の刃・黄金の騎士」を手札に加える。
+                                 そして、EPPを使って「真王の刃・黄金の騎士」のエンハンスでリーダーの体力を4回復と相手盤面全体に4点ダメージで倒す。
+                                 「休日の王女・プリム」は攻撃しない。
+      </span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="3">有効度：★★★</div>
+      <P>「真王の刃・黄金の騎士」のエンハンス能力で体力を回復しながら相手フォロワーを倒すことができる。
+         しかし、体力は10点とギリギリなため、超進化の吹っ飛びダメージで負けてしまうため、「休日の王女・プリム」は攻撃しない。
+         唯一、「鬼呼びの術」が一緒に使われると負け筋になってしまう。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/amaria.png" class="choice-img">
+      <span class="choice-text"> 場にある「休日の王女・プリム」で4/4に攻撃し、「煌刃の勇者・アマリア」をプレイする。
+                                 出できた「スティールナイト」で2体と相打ちし、手札からEPPを使って「静かなるメイド・ノーニャ」をプレイし守護を3体以上並べる。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="4">有効度：★★★★</div>
+      <P>「煌刃の勇者・アマリア」はファンファーレで「スティールナイト」を4体出し、出たフォロワーに突進と守護を付与し、攻撃力を+1する。
+         そのため、相手のフォロワーを倒しながら、守護を盤面に残すことができる。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/guri-muniru.png" class="choice-img">
+      <span class="choice-text">「颶風の天業・グリームニル」と「静かなるメイド・ノーニャ」をプレイする。
+                                「蒼い空を征く騎空士・グラン&ジータ」のモード1（相手の場のフォロワーからランダム1枚に5ダメージ）と、奥義でフォロワーを倒す。
+      </span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="2">有効度：★★</div>
+      <p>守護が2体おり相手フォロワーをすべて倒しているが、負け筋は複数あるため有効度はあまり高くない。</p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        対処の説明(クリックすると表示されるよ)
+    </summary>
+    
+    <div class="explanation-text"> 
+      <p>疾走による負け筋を回避するためには、守護を並べることやリーダーの体力を回復することが有効である。</p>
+      <p>「五行の果て・クオン」はエンハンスで10PP使うためのスペルブーストで0コストでない限りは基本的に1体までしか対応できないが、負け筋を減らすなら複数体守護を並べることが有効である。</p>
+      <p>そのため、「煌刃の勇者・アマリア」をプレイしフォロワーを倒しながら守護を並べることが有効度が高いプレイとなる。</p>
+    </div>
+</details>
+</div>
+
+<div class="button-container">
+  <a href="page11.html" class="next-button">次の問題へ</a>
+</div>
+
+ <script src="scripts.js"></script>
+
+<footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
+    <p>© Cygames, Inc.</p>
+    <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
+    <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
+</footer>
+
+</body>
+</html>

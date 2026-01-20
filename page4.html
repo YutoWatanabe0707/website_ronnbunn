@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <title>5問目</title>
+   <link rel="stylesheet" href="styles.css">
+   <script>
+    // ページが開かれた瞬間に「第1問」を保存する
+    localStorage.setItem('sv_progress', 'page5.html');
+   </script>
+</head>
+<body>
+   <header>
+      <h1>Shadowverse:World Beyoundにおける<br>予測し対処する流れを学ぶwebサイト</h1>
+   </header>
+
+<figure class="image-box">
+  <img src="mondai/v-kisuu3.png" alt="対戦画面">
+  <figcaption>
+    相手のクラスはビショップで、コンセプトは奇数ビショップ。<br>
+   自分の連携は5で進化回数は1回である。
+  </figcaption>
+</figure>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 次のターンに予測できる相手の行動で危険なものは？</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/sekai-teiji.png" class="choice-img">
+      <span class="choice-text">《世界》の提示</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="2">危険度：<span>💀💀</span></div>
+      <p>2枚ドローしながら、攻撃力最大のフォロワーを破壊する。
+         相手のリソースが増えながらフォロワーを倒されるが、盤面的に脅威は無いため危険度はそこまでない。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/sarefa.png" class="choice-img">
+      <span class="choice-text">水の守護神・サレファ</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
+      <p>ファンファーレで3回復して、進化時に3点を盤面全体に与えてくる。
+         ロイヤル対面では、展開しても倒されてしまうので体力4以上にするか、過度な展開は止めよう。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/kukisiro.png" class="choice-img">
+      <span class="choice-text">霧巻花・クキシロ</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="4">危険度：<span>💀💀💀💀</span></div>
+      <p>クレストを付与し、引いたカードが1、3、5、なら「清純なる白狐」か「ホーリーファルコン」がランダムで出てくる。
+         その後の盤面展開力が強く、対応できなくなる。
+         ファンファーレで手札2枚を戻して2枚ドローするので、クレストが2回働く。
+      </p>
+     </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/toru-.png" class="choice-img">
+      <span class="choice-text">英雄幻視・トルー</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
+      <p>疾走を持っており、アミュレットをアクトとするとドレインを持つ。
+         現段階では特に危険性はない。
+      </p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        予想の説明(クリックすると表示されるよ)
+    </summary>
+    <div class="explanation-text">
+        <p>この状況では相手は先攻7ターン目で、7コストである「霧巻花・クキシロ」がプレイされる可能性が高い。</p>
+        <p>「霧巻花・クキシロ」は突進を持っており、クレストによって「ホーリーファルコン」が出ると最大3体除去ができる。</p>
+        <p>そのため、盤面を展開し、処理できないようにすることが有効である</p>
+    </div>
+    </details>
+</div>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 上記の予測の理由を踏まえた上で対処として良いと思うものを選びなさい</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/ruminasu.png" class="choice-img">
+      <span class="choice-text">「勇猛のルミナスランサー」を2枚出し、1体を進化し、4/3を倒す。
+                                 出てきた「ナイト」2体で2/2のフォロワーも倒す。
+      </span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="2">有効度：★★</div>
+          <P>相手のフォロワーを全て倒せ、場に1体残るが、簡単に返されてしまう。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/zeta&bea.png" class="choice-img">
+      <span class="choice-text">「真紅と群青・ゼタ&ベアトリクス」で相手のフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="1">有効度：★</div>
+      <P>相手のフォロワーを全て倒せるが、場にフォロワーがいなくなる。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/meiji.png" class="choice-img">
+      <span class="choice-text">「卓越のルミナスメイジ」を出し、それを進化し、4/3を倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="4">有効度：★★★★</div>
+      <P>4体のフォロワーが場に残り、除去範囲から逃れられる。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/girudaria.png" class="choice-img">
+      <span class="choice-text">「静寂のアナテマ・ギルダリア」を出して進化し、相手のフォロワーを攻撃し倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="3">有効度：★★★</div>
+      <p>相手のフォロワーを全てを倒しながら、3体のフォロワーが場に残る。</p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        対処の説明(クリックすると表示されるよ)
+    </summary>
+    
+    <div class="explanation-text"> 
+      <p>この状況だと、「霧巻花・クキシロ」の処理範囲は最大3体であるため、それ以上のフォロワーを展開することが大切である。</p>
+      <p>そのため、「卓越のルミナスメイジ」をプレイして盤面を展開していくことは有効度が高い。</p>
+    </div>
+</details>
+</div>
+
+<div class="button-container">
+  <a href="page6.html" class="next-button">次の問題へ</a>
+</div>
+
+ <script src="scripts.js"></script>
+
+<footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
+    <p>© Cygames, Inc.</p>
+    <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
+    <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
+</footer>
+
+</body>
+</html>

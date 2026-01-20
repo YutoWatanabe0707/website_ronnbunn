@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <title>8問目</title>
+   <link rel="stylesheet" href="styles.css">
+   <script>
+    // ページが開かれた瞬間に「第1問」を保存する
+    localStorage.setItem('sv_progress', 'page8.html');
+   </script>
+</head>
+<body>
+   <header>
+      <h1>Shadowverse:World Beyoundにおける<br>予測し対処する流れを学ぶwebサイト</h1>
+   </header>
+
+<figure class="image-box">
+  <img src="mondai/w-hijutu2.png" alt="対戦画面">
+  <figcaption>
+   相手のクラスはウィッチで、コンセプトは秘術ウィッチ。<br>
+   自分の連携は11で進化回数は2回であり、相手の進化回数は2である。
+  </figcaption>
+</figure>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 次のターンに予測できる相手の行動で危険なものは？</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/no-man.png" class="choice-img">
+      <span class="choice-text">アダマントアルケミスト・ノーマン</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
+      <p>ファンファーレと進化時に土の秘術1でモードを1つ選んで能力が働く。
+        その中でも「ガーディアンゴーレム」を出してそれはバリアを持つ、という効果が強力で強い盤面ができ処理が容易ではない。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/raransemu.png" class="choice-img">
+      <span class="choice-text">暴食のアナテマ・ララアンセム</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="4">危険度：<span>💀💀💀💀</span></div>
+      <p>「暴食のアナテマ・ララアンセム」はオーラを持っており、能力で選択できない。
+          さらに、ラストワードの土の秘術2で「暴食のアナテマ・ララアンセム」を場に出す効果を持っており、土の印が2以上ある限り場に出続ける。
+          処理が大変なうえ、超進化時に相手のフォロワーを2体破壊する強力な効果も持っている。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/kariosutoro.png" class="choice-img">
+      <span class="choice-text">天才美少女錬金術師・カリオストロ</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="2">危険度：<span>💀💀</span></div>
+      <p>ファンファーレで土の印を+2し「アルス・マグナ」を手札に加える。
+         奥義がたまっている可能性があり、溜まっていると進化する。
+         解放奥義までは溜まっていないため、そこまで危険ではない。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/peneropi-.png" class="choice-img">
+      <span class="choice-text">魔法の薬剤師・ペネロピー</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
+      <p>ファンファーレで土の印を+2し、超進化することで、2枚ドロー、リーダー2回復、土の印+2する効果を持っている。
+         超進化しなければいけないが、このカード1枚で手札補充と回復と土の印を増やせる。
+         リソースが回復するが盤面は強くない。
+      </p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        予想の説明(クリックすると表示されるよ)
+    </summary>
+    <div class="explanation-text">
+        <p>この状況では相手は先攻8ターン目で、8コストである「暴食のアナテマ・ララアンセム」がプレイされる可能性が高い。</p>
+        <p>土の印が多くある場合に、「暴食のアナテマ・ララアンセム」がプレイされると処理が間に合わず盤面に残り続けてしまい、大ダメージを受けてしまう。</p>
+        <p>また、超進化時に相手のフォロワーを2体破壊する効果を持っており盤面を破壊しながらリーダーへダメージを与えてくる。</p>
+        <p>超進化込みで3体までしか処理できないため、4体以上盤面を展開してプレイしにくい状態を作ることが有効である。</p>
+    </div>
+    </details>
+</div>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 上記の予測の理由を踏まえた上で対処として良いと思うものを選びなさい</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/unnkei.png" class="choice-img">
+      <span class="choice-text">「麗金花・ウンケイ」を出して、ファンファーレで消滅させる。その後、進化して残ったフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="1">有効度：★</div>
+          <P>盤面に2体しか残らず「暴食のアナテマ・ララアンセム」がプレイしやすくなってしまう。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/ougonnokisi.png" class="choice-img">
+      <span class="choice-text">「真王の刃・黄金の騎士」を出し、ファンファーレのモード：（2）相手の場のフォロワーすべてに4ダメージ。を選択してフォロワーを倒す。
+      </span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="2">有効度：★★</div>
+      <P>進化権を使わずフォロワーを全て処理できるが、盤面に2体しか残らず「暴食のアナテマ・ララアンセム」がプレイしやすくなってしまう。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/emiria.png" class="choice-img">
+      <span class="choice-text">「白銀の騎士団長・エミリア」を出した後、EPPを使って「卓越のルミナスメイジ」を出し、「白銀の騎士団長・エミリア」を超進化してフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="3">有効度：★★★</div>
+      <P>盤面に5体並べられて「暴食のアナテマ・ララアンセム」がプレイしにくくなり、有効なプレイである。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/girudaria.png" class="choice-img">
+      <span class="choice-text">「静寂のアナテマ・ギルダリア」を出して超進化し、相手のフォロワーを攻撃し、残ったフォロワーは「颶風の天業・グリームニル」のクレストで倒す。
+                                 残った2PPで「静かなるメイド・ノーニャ」を出して盤面に5体残す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="4">有効度：★★★★</div>
+      <p>盤面に5体並べられて「暴食のアナテマ・ララアンセム」がプレイしにくくなり、有効なプレイである。
+        フォロワーも全部処理でき、盤面の「王断の天宮・スタチウム」で攻めることができる。
+      </p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        形対処の対処の説明(クリックすると表示されるよ)
+    </summary>
+    
+    <div class="explanation-text"> 
+        <p>「暴食のアナテマ・ララアンセム」は超進化時で2体のフォロワーを破壊でき、最大3体までしか倒せない。</p>
+        <p>最低限進化権を使わせる為にも3体以上フォロワーを並べることが有効であり、4体以上並べると除去範囲から外れて場にフォロワーが残る。</p>
+        <p>そのため,盤面にフォロワーがいるほど相手はプレイしにくくなり、プレイされてもフォロワーが場に残り、攻めることができる。</p>
+    </div>
+</details>
+</div>
+
+<div class="button-container">
+  <a href="page9.html" class="next-button">次の問題へ</a>
+</div>
+
+ <script src="scripts.js"></script>
+
+<footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
+    <p>© Cygames, Inc.</p>
+    <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
+    <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
+</footer>
+
+</body>
+</html>

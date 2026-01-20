@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <title>7問目</title>
+   <link rel="stylesheet" href="styles.css">
+   <script>
+    // ページが開かれた瞬間に「第1問」を保存する
+    localStorage.setItem('sv_progress', 'page7.html');
+   </script>
+</head>
+<body>
+   <header>
+      <h1>Shadowverse:World Beyoundにおける<br>予測し対処する流れを学ぶwebサイト</h1>
+   </header>
+
+<figure class="image-box">
+  <img src="mondai/w-hijutu1.png" alt="対戦画面">
+  <figcaption>
+   相手のクラスはウィッチで、コンセプトは秘術ウィッチ。<br>
+   自分の連携は3で進化回数は0回である。
+  </figcaption>
+</figure>
+
+<div class="quiz-group">
+  <div class="quiz-page">
+    <div class="question-box">
+      <h2>Q. 次のターンに予測できる相手の行動で危険なものは？</h2>
+    </div>
+  </div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/tyoukou.png" class="choice-img">
+      <span class="choice-text">調香の魔術師</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
+      <p>ファンファーレと進化時でフォロワーに3点ダメージと土の印を+1される。
+        そのため、フォロワーを最大3面取りながら土の印を増やされてしまう。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/kariosutoro.png" class="choice-img">
+      <span class="choice-text">天才美少女錬金術師・カリオストロ</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
+      <p>ファンファーレで土の印を+2し「アルス・マグナ」を手札に加えるが、奥義が溜まっていないため危険度は高くない。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/mirerize.png" class="choice-img">
+      <span class="choice-text">辛苦の旅路・ミレイユ&リゼット</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="4">危険度：<span>💀💀💀💀</span></div>
+      <p>2体の「辛苦の旅路・ミレイユ&リゼット」が土の秘術2で進化権を使わずに進化する。
+         進化回数を2回増やせ、「天使長の後継・サンダルフォン」の直接召喚や手札に「天才美少女錬金術師・カリオストロ」の奥義に大きく近づく。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/e-deruwaisu.png" class="choice-img">
+      <span class="choice-text">理光の天宮・エーデルワイス</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="2">危険度：<span>💀💀</span></div>
+      <p>ファンファーレで土の秘術2で進化し、進化したときにフォロワーにランダムダメージ4点と2PP回復する。
+         ダメージがランダムなため運要素があり、更に土の印を消費するためそこまで危険度は高くない。
+      </p>
+     </div>
+  </details>
+  </div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        予想の説明(クリックすると表示されるよ)
+    </summary>
+    <div class="explanation-text">
+        <p>この状況では相手は先攻5ターン目で土の印が3以上あるため、「辛苦の旅路・ミレイユ&リゼット」がプレイされる可能性が高い。</p>
+        <p>5/5の高いスタッツが2体並び、進化も2回分稼げるため「天使長の後継・サンダルフォン」の直接召喚や「天才美少女錬金術師・カリオストロ」の奥義などが早まる。</p>
+        <p>「辛苦の旅路・ミレイユ&リゼット」がプレイしにくい盤面を作ることが有効である。</p>
+    </div>
+    </details>
+</div>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 上記の予測の理由を踏まえた上で対処として良いと思うものを選びなさい</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/unnkei.png" class="choice-img">
+      <span class="choice-text">「麗金花・ウンケイ」を出して、ファンファーレで消滅させる。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="2">有効度：★★</div>
+          <P>盤面に1体しか残っておらず、「辛苦の旅路・ミレイユ&リゼット」を簡単にプレイされ返されてしまう。
+            進化権は使っていないので、リソースの温存は出来ている。
+          </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/purimu.png" class="choice-img">
+      <span class="choice-text">「休日の王女・プリム」を出した後、手札に加わった「静かなるメイド・ノーニャ」も出し、「休日の王女・プリム」を進化してフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="3">有効度：★★★</div>
+      <P>「静かなるメイド・ノーニャ」が必殺を持つため、1体は相打ちでき盤面を有利に取ることができる</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/sutatiumu.png" class="choice-img">
+      <span class="choice-text">「王断の天宮・スタチウム」を進化してフォロワーを倒しつつ盤面展開する。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="4">有効度：★★★★</div>
+      <P>「辛苦の旅路・ミレイユ&リゼット」は5/5のため、進化すると6/6である「王断の天宮・スタチウム」がいると2体で攻撃しなければならないので非常にプレイしにくくなる。
+         また、自分の盤面も展開できるため強い盤面により処理を強要することができる。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/girune.png" class="choice-img">
+      <span class="choice-text">「干絶の顕現・ギルネリーゼ」を出して、ファンファーレと進化時で相手のフォロワーを選択して倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="1">有効度：★</div>
+      <p>盤面に1体しか残っておらず、「辛苦の旅路・ミレイユ&リゼット」を簡単にプレイされ返されてしまう。
+         さらに進化権も使ってしまっており、「干絶の顕現・ギルネリーゼ」のドレインも生かせていない。
+      </p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        対処の説明(クリックすると表示されるよ)
+    </summary>
+    
+    <div class="explanation-text"> 
+      <p>「辛苦の旅路・ミレイユ&リゼット」は5/5のため、体力6以上のフォロワーを残すことがプレイしにくくなり有効である。</p>
+      <p>そのため、進化すると6/6である「王断の天宮・スタチウム」をプレイすることは有効度が高い。</p>
+      <p>また、自分の盤面も展開できるため残ったフォロワーで攻めることができる。</p>
+    </div>
+</details>
+</div>
+
+<div class="button-container">
+  <a href="page8.html" class="next-button">次の問題へ</a>
+</div>
+
+ <script src="scripts.js"></script>
+
+<footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
+    <p>© Cygames, Inc.</p>
+    <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
+    <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
+</footer>
+
+</body>
+</html>

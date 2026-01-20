@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <title>9問目</title>
+   <link rel="stylesheet" href="styles.css">
+   <script>
+    localStorage.setItem('sv_progress', 'page9.html');
+   </script>
+</head>
+<body>
+   <header>
+      <h1>Shadowverse:World Beyoundにおける<br>予測し対処する流れを学ぶwebサイト</h1>
+   </header>
+
+<figure class="image-box">
+  <img src="mondai/w-supell1.png" alt="対戦画面">
+  <figcaption>
+   相手のクラスはウィッチで、コンセプトはスペルウィッチ。<br>
+   自分の連携は1で進化回数は0回である。
+   相手はスペルブーストを最大4回行っている。
+  </figcaption>
+</figure>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 次のターンに予測できる相手の行動で危険なものは？</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/sutobura.png" class="choice-img">
+      <span class="choice-text">「ストームブラスト」などのスペルによる除去</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
+      <p>スペルなどでの除去では盤面的には強くないため、危険度はそこまでない。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/ba-zent.png" class="choice-img">
+      <span class="choice-text">否定の詠唱・バーゼント</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
+      <p>ファンファーレで「オニオン軍団」を2体に場に出す。
+         進化時にはクレストを付与し、付与されたプレイヤーのターン開始時に「オニオン軍団」を1枚を場に出す。
+         「オニオン軍団」は1/1で突進を持っており、攻撃時にスペルブーストをするため手札スペルブーストの速度が上がってしまう。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/mira.png" class="choice-img">
+      <span class="choice-text">アドラブルティーチャー・ミラ</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="2">危険度：<span>💀💀</span></div>
+      <p>ファンファーレで手札をスペルブーストし、進化時にはスペルブーストとフォロワー1体に3ダメージ与える。
+         コストの下がったカードを一緒にプレイされるかもしれないが、盤面的にはそこまで強くない。
+      </p>
+     </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/angure.png" class="choice-img">
+      <span class="choice-text">マナリアフレンズ・アン&グレア</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="4">危険度：<span>💀💀💀💀</span></div>
+      <p>ファンファーレで「アンの大英霊」（5/5の守護と突進持ちで、相手のターン終了時に消滅する）を出しながら、手札全てを3回スペルブーストとする。
+        スペルブーストされてコストの下がったカードを一緒にプレイされる可能性がある。
+         進化時にフォロワー1体に3ダメージ与えられて最大3体までしかフォロワーを倒せる。
+      </p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        予想の説明(クリックすると表示されるよ)
+    </summary>
+    <div class="explanation-text">
+        <p>この状況では相手は先攻5ターン目で、「マナリアフレンズ・アン&グレア」がプレイされる可能性が高い。</p>
+        <p>ファンファーレで「アンの大英霊」が出てくるため、対抗する盤面を作っておかないと5/5の守護裏に「マナリアフレンズ・アン&グレア」が進化した場合6/6ができてしまう。</p>
+        <p>さらに、スペルブーストでコストの下がったカードをカードが出てくる可能性もあるため、こちらも盤面を展開することが有効である。</p>
+    </div>
+    </details>
+</div>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 上記の予測の理由を踏まえた上で対処として良いと思うものを選びなさい</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/meiji.png" class="choice-img">
+      <span class="choice-text">「卓越のルミナスメイジ」を出して進化し、盤面に5体残しながら相手のフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="4">有効度：★★★★</div>
+          <P>「マナリアフレンズ・アン&グレア」は進化込みでフォロワーを3体までしか倒せないため、4体以上盤面に並べるとフォロワーを処理できず、次のターンに返しやすくなる。
+             「マナリアフレンズ・アン&グレア」が除去するためにフォロワーを攻撃するため、体力が4になり、「干絶の顕現・ギルネリーゼ」などで返せる。
+          </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/guran&zi-ta.png" class="choice-img">
+      <span class="choice-text">「蒼い空を征く騎空士・グラン&ジータ」のモード1（相手の場のフォロワーからランダム1枚に5ダメージ）を選んで出す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="2">有効度：★★</div>
+      <P>「蒼い空を征く騎空士・グラン&ジータ」のファンファーレで進化権を使わずにフォロワーを破壊することができる。
+         しかし、盤面にフォロワーが2体しかおらず、そのうえ体力が3以下なので「マナリアフレンズ・アン&グレア」が6/6のままで残ってしまう。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/girune.png" class="choice-img">
+      <span class="choice-text">「干絶の顕現・ギルネリーゼ」を出して、ファンファーレで相手のフォロワーを選択して倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="1">有効度：★</div>
+      <P>「干絶の顕現・ギルネリーゼ」を出してしまうと守護裏の「マナリアフレンズ・アン&グレア」の返しがなくなり、場に残ってしまうため使うのはよろしくない。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/purimu.png" class="choice-img">
+      <span class="choice-text">「休日の王女・プリム」を出した後、手札に加わった「静かなるメイド・ノーニャ」も出し、それを進化して場にある「颶風の天業・グリームニル」でフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="3">有効度：★★★</div>
+      <p>「静かなるメイド・ノーニャ」が必殺を持つため、進化することで5/5になる。
+         スペルブーストで0コストになったカードによって体力を3以下にされない限りは、1体は相打ちでき盤面が返しやすくなる。</p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        対処の説明(クリックすると表示されるよ)
+    </summary>
+    
+    <div class="explanation-text"> 
+      <p>「マナリアフレンズ・アン&グレア」は進化込みでフォロワーを3体までしか倒せないため、4体以上盤面に並べるとフォロワーを処理できず、次のターンに返しやすくなる。</p>
+      <p>3体以上フォロワーを並べると進化権を使い、「マナリアフレンズ・アン&グレア」が除去するためにフォロワーを攻撃するため、体力が減り返しやすくなる。</p>
+      <p>そのため、「卓越のルミナスメイジ」をプレイして盤面を展開していくことが「マナリアフレンズ・アン&グレア」に対して有効度が高いプレイとなる。</p>
+    </div>
+</details>
+</div>
+
+<div class="button-container">
+  <a href="page10.html" class="next-button">次の問題へ</a>
+</div>
+
+ <script src="scripts.js"></script>
+
+<footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
+    <p>© Cygames, Inc.</p>
+    <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
+    <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
+</footer>
+
+</body>
+</html>

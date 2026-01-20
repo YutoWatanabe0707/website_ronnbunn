@@ -2,11 +2,11 @@
 <html lang="ja">
 <head>
    <meta charset="UTF-8">
-   <title>2問目</title>
+   <title>3問目</title>
    <link rel="stylesheet" href="styles.css">
    <script>
     // ページが開かれた瞬間に「第1問」を保存する
-    localStorage.setItem('sv_progress', 'page2.html');
+    localStorage.setItem('sv_progress', 'page3.html');
    </script>
 </head>
 <body>
@@ -15,9 +15,10 @@
    </header>
 
 <figure class="image-box">
-  <img src="mondai/" alt="対戦画面">
+  <img src="mondai/v-syugo1.png" alt="対戦画面">
   <figcaption>
-   
+   相手のクラスはビショップで、コンセプトは守護クレストビショップ。<br>
+   自分の連携は5で進化回数は1回である。
   </figcaption>
 </figure>
 
@@ -31,45 +32,50 @@
 <div class="quiz-container">
   <details class="choice-box" name="q1">
     <summary>
-      <img src="cards/" class="choice-img">
-      <span class="choice-text"></span>
-    </summary>
-    <div class="evaluation-content">
-      <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
-      <p></p>
-    </div>
-  </details>
-
-  <details class="choice-box" name="q1">
-    <summary>
-      <img src="cards/" class="choice-img">
-      <span class="choice-text"></span>
+      <img src="cards/wiru.png" class="choice-img">
+      <span class="choice-text">嗚咽の聖騎士・ウィルバート</span>
     </summary>
     <div class="evaluation-content">
       <div class="danger-level" data-level="4">危険度：<span>💀💀💀💀</span></div>
-      <p></p>
+      <p>クレストを付与し、ラストワードで「聖騎兵」を2体出す。
+         クレストは守護が出た時、+1/+2するため、除去が大変となる。
+      </p>
     </div>
   </details>
 
   <details class="choice-box" name="q1">
     <summary>
-      <img src="cards/" class="choice-img">
-      <span class="choice-text"></span>
+      <img src="cards/ansoku.png" class="choice-img">
+      <span class="choice-text">安息の団結者</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
+      <p>ファンファーレでフォロワーを破壊し、進化時にクレストを付与する。
+         「絶望の顕現・マーウィン」のクレストにより、クレストの数に応じてダメージが増える。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/sarefa.png" class="choice-img">
+      <span class="choice-text">水の守護神・サレファ</span>
     </summary>
     <div class="evaluation-content">
       <div class="danger-level" data-level="2">危険度：<span>💀💀</span></div>
-      <p></p>
+      <p>ファンファーレで3回復して、進化時に3点を盤面全体に与えてくる。
+         ロイヤル対面では、展開しても倒されてしまうので体力4以上にするか、過度な展開は止めよう。</p>
      </div>
   </details>
 
   <details class="choice-box" name="q1">
     <summary>
-      <img src="cards/" class="choice-img">
-      <span class="choice-text"></span>
+      <img src="cards/danin.png" class="choice-img">
+      <span class="choice-text">聖騎士の団員</span>
     </summary>
     <div class="evaluation-content">
       <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
-      <p></p>
+      <p>与える影響はなく危険度は低い</p>
     </div>
   </details>
 </div>
@@ -79,7 +85,7 @@
         予想の説明(クリックすると表示されるよ)
     </summary>
     <div class="explanation-text">
-        <p></p>
+        <p>「嗚咽の聖騎士・ウィルバート」は</p>
     </div>
     </details>
 </div>
@@ -149,7 +155,7 @@
 </div>
 
 <div class="button-container">
-  <a href="page3.html" class="next-button">次の問題へ</a>
+  <a href="page4.html" class="next-button">次の問題へ</a>
 </div>
 
  <script src="scripts.js"></script>

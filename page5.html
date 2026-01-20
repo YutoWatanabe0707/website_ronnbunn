@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <title>6問目</title>
+   <link rel="stylesheet" href="styles.css">
+   <script>
+    // ページが開かれた瞬間に「第1問」を保存する
+    localStorage.setItem('sv_progress', 'page6.html');
+   </script>
+</head>
+<body>
+   <header>
+      <h1>Shadowverse:World Beyoundにおける<br>予測し対処する流れを学ぶwebサイト</h1>
+   </header>
+
+<figure class="image-box">
+  <img src="mondai/v-kisuu1.png" alt="対戦画面">
+  <figcaption>
+    相手のクラスはビショップで、コンセプトは奇数ビショップ。<br>
+   自分の連携は8で進化回数は2回であり、
+   手札の「十天衆の頭目・シエテ」放奥義は11,「天使長の後継・サンダルフォン」の解放奥義は9,「蒼い空を征く騎空士・グラン&ジータ」の奥義は9である。
+  </figcaption>
+</figure>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 次のターンに予測できる相手の行動で危険なものは？</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/kirimakibana.png" class="choice-img">
+      <span class="choice-text">「堅固なる霧巻花」と「レ・フィーエの宝石」</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="2">危険度：<span>💀💀</span></div>
+      <p>ドロー効果が「霧巻花・クキシロ」のクレストでそのまま盤面展開に繋がるため、これらの2ドローは強い。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/jannu.png" class="choice-img">
+      <span class="choice-text">純白の聖女・ジャンヌ</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="4">危険度：<span>💀💀💀💀</span></div>
+      <p>ファンファーレで盤面全体に6ダメージを与え、自分の場のフォロワーが攻撃力+2、体力+4される。
+        「霧巻花・クキシロ」のクレストで出てきたフォロワーが、攻撃力+2、体力+4され、「ホーリーファルコン」が出た場合疾走を持っているためリーダーにダメージが出てしまう。
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/kukisiro.png" class="choice-img">
+      <span class="choice-text">霧巻花・クキシロ</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="3">危険度：<span>💀💀💀</span></div>
+      <p>ファンファーレで手札2枚を戻して2枚ドローするので、クレストが2回働く。
+         突進を持っており、除去にも対応できる。
+      </p>
+     </div>
+  </details>
+
+  <details class="choice-box" name="q1">
+    <summary>
+      <img src="cards/girune.png" class="choice-img">
+      <span class="choice-text">干絶の顕現・ギルネリーゼ</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="danger-level" data-level="1">危険度：<span>💀</span></div>
+      <p>体力を回復され、盤面を取られるががそこまでない。
+         体力が2以上ある場合に攻撃力を上げるために使われることもある。
+      </p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        予想の説明(クリックすると表示されるよ)
+    </summary>
+    <div class="explanation-text">
+        <p>この状況では相手は先攻9ターン目で、8コストである「純白の聖女・ジャンヌ」がプレイされる可能性が高い。</p>
+        <p>「純白の聖女・ジャンヌ」はファンファーレで盤面全体に6ダメージを与え、自分の場のフォロワーが攻撃力+2、体力+4される。</p>
+        <p>そのため、ダメージを受けても倒されない場を作ることが有効である。</p>
+    </div>
+    </details>
+</div>
+
+<div class="quiz-group">
+<div class="quiz-page">
+  <div class="question-box">
+    <h2>Q. 上記の予測の理由を踏まえた上で対処として良いと思うものを選びなさい</h2>
+  </div>
+</div>
+
+<div class="quiz-container">
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/siete.png" class="choice-img">
+      <span class="choice-text">「卓越のルミナスメイジ」を出し、EPPを使い「十天衆の頭目・シエテ」の奥義で進化し相手のフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="1">有効度：★</div>
+          <P>強そうに見えるが、「純白の聖女・ジャンヌ」のファンファーレで全て倒されてしまう。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/zeta&bea.png" class="choice-img">
+      <span class="choice-text">「真紅と群青・ゼタ&ベアトリクス」で相手のフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="3">有効度：★★★</div>
+      <P>相手のフォロワーを倒し、場が空くためプレイしない可能性がある。</p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/guran&zi-ta.png" class="choice-img">
+      <span class="choice-text">「蒼い空を征く騎空士・グラン&ジータ」のモード1（相手の場のフォロワーからランダム1枚に5ダメージ）と、超進化でフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="2">有効度：★★</div>
+      <P>相手のフォロワーを全て倒せるが、超進化権も使っているためおすすめはできない。</P>
+      </p>
+    </div>
+  </details>
+
+  <details class="choice-box" name="q2">
+    <summary>
+      <img src="cards/emiria.png" class="choice-img">
+      <span class="choice-text">「白銀の騎士団長・エミリア」を出した後、「卓越のルミナスメイジ」を出し、「白銀の騎士団長・エミリア」を超進化してバリアを付与しフォロワーを倒す。</span>
+    </summary>
+    <div class="evaluation-content">
+      <div class="effective-level" data-level="4">有効度：★★★★</div>
+      <p>バリアがつくため、フォロワーをが倒されないため、プレイしにくくなる。</p>
+    </div>
+  </details>
+</div>
+
+<details class="explanation-box">
+    <summary class="simple-heading">
+        対処の説明(クリックすると表示されるよ)
+    </summary>
+    
+    <div class="explanation-text"> 
+      <p>「純白の聖女・ジャンヌ」は場のフォロワーを倒しながら自分の他のフォロワーを強化してくるため相手のフォロワーを残さないことが大切である。</p>
+      <p>また、ダメージを受けても残るような場を展開することでプレイしにくくなり有利に進める。</p>
+      <p>そのため、「白銀の騎士団長・エミリア」と「卓越のルミナスメイジ」をプレイしてバリアを付与した盤面を展開していくことは有効度が高い。</p>
+    </div>
+</details>
+</div>
+
+<div class="button-container">
+  <a href="page7.html" class="next-button">次の問題へ</a>
+</div>
+
+ <script src="scripts.js"></script>
+
+<footer style="text-align: center; padding: 40px 20px; font-size: 0.8em; color: #666; border-top: 1px solid #ddd; margin-top: 50px;">
+    <p>© Cygames, Inc.</p>
+    <p>当サイトで使用しているゲーム画像の著作権その他の知的財産権は、当該ゲームの提供元に帰属します。</p>
+    <p>※本サイトはファンサイトであり、株式会社Cygamesとは一切関係ありません。</p>
+</footer>
+
+</body>
+</html>
